@@ -46,6 +46,23 @@ h1, h2, h3 {
 .navbar nav a:hover {
     color: #28a428;
 }
+.imagen-full {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+    margin: 20px auto 0;
+}
+/* QUIENES SOMOS – Imagen full en PC y teléfono */
+.imagen-full {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+    margin: 20px auto 0;
+}
 
 /* HERO */
 .hero {
@@ -266,3 +283,4 @@ footer {
         width: 35px;
     }
 }
+
