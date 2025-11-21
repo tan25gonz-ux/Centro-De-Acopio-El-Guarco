@@ -181,3 +181,88 @@ footer {
     text-align: center;
     line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .navbar nav a {
+        margin: 6px;
+        display: inline-block;
+    }
+
+    .navbar .logo span {
+        font-size: 18px;
+    }
+
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        padding: 40px 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-img {
+        width: 180px;
+    }
+
+    /* QUIENES SOMOS - IMAGEN FULL */
+    .imagen-full {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+    /* TABLA RESPONSIVA */
+    .tabla {
+        font-size: 14px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* MAPA */
+    .mapa-container iframe {
+        height: 250px;
+    }
+
+    /* CONTACTO */
+    .contacto-card p {
+        font-size: 16px;
+    }
+
+    .redes {
+        font-size: 22px;
+    }
+
+    /* DIRECCIÓN */
+    .direccion {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-img {
+        width: 150px;
+    }
+
+    .navbar img {
+        width: 35px;
+    }
+}
