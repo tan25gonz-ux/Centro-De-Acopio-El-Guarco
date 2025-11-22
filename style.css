@@ -1,0 +1,325 @@
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    color: #2e4d2e;
+    transition: background 0.3s, color 0.3s;
+}
+
+h1, h2, h3 {
+    color: #1e8022;
+    text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: white;
+    border-bottom: 2px solid #d9e8d8;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: #1e8022;
+    font-size: 18px;
+}
+
+.navbar img {
+    width: 40px;
+}
+
+/* MENU DE NAV */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e8022;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #28a428;
+}
+
+/* BOTON HAMBURGUESA */
+.menu-btn {
+    display: none;
+    font-size: 26px;
+    color: #1e8022;
+    cursor: pointer;
+}
+
+/* DARK MODE */
+.dark-toggle {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #1e8022;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    background: white;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hero-img {
+    width: 230px;
+}
+
+.btn {
+    background: #1e8022;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #28a428;
+}
+
+/* SECCIONES */
+.seccion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-top: 20px;
+}
+
+/* IMAGEN QUIENES SOMOS */
+.imagen-full {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 14px;
+    object-fit: contain;
+}
+
+/* TABLA */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th {
+    background: #1e8022;
+    color: white;
+    padding: 12px;
+}
+
+.tabla td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* NO LISTA */
+.no-lista li {
+    margin: 8px 0;
+}
+
+/* MAPA */
+.mapa-container iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 14px;
+}
+
+/* DIRECCION */
+.direccion {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #146b18;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* REDES */
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.redes i {
+    cursor: pointer;
+    color: #1e8022;
+    transition: 0.3s;
+}
+
+.redes i:hover {
+    color: #28a428;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e8022;
+    color: white;
+    margin-top: 40px;
+}
+
+/* SLIDER */
+.slider-section {
+    width: 95%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+}
+
+.slide {
+    min-width: 75%;
+    max-width: 75%;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    scroll-snap-align: center;
+    transition: transform 0.3s;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* SERVICIOS */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.servicio-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.servicio-card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #1e8022;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ANIMACIONES SCROLL */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* 🌙 MODO OSCURO CORREGIDO */
+body.dark {
+    background: #222 !important;
+    color: #ededed !important;
+}
+
+body.dark .navbar {
+    background: #111;
+    border-bottom-color: #444;
+}
+
+body.dark nav,
+body.dark .card,
+body.dark .servicio-card,
+body.dark .slider-container,
+body.dark .slide {
+    background: #333;
+    color: #eee;
+}
+
+body.dark nav a {
+    color: #fff;
+}
+
+body.dark footer {
+    background: #000;
+}
+
+body.dark .direccion {
+    color: #ccc;
+}
+
+body.dark .dark-toggle i {
+    color: yellow;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: white;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 2px solid #d9e8d8;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+}
