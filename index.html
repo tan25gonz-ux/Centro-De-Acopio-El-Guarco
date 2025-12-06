@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/jpeg" href="Imagenes/Logo.jpeg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro de Acopio El Guarco</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="Imagenes/Logo.jpeg" alt="Logo">
+            <span>Centro de Acopio El Guarco</span>
+        </div>
+
+        <div class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav id="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#quienes">Quiénes Somos</a>
+            <a href="#materiales">Materiales</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#ubicacion">Ubicación</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="dark-toggle" id="darkToggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero reveal">
+        <div class="hero-content">
+            <h1>Centro de Acopio El Guarco</h1>
+            <p>Más que un centro de acopio, somos un motor de cambio ambiental para El Guarco ♻️</p>
+            <a href="#materiales" class="btn">Ver Materiales Aceptados</a>
+        </div>
+
+        <img src="Imagenes/Logo.jpeg" class="hero-img">
+    </section>
+    
+    <!-- SLIDER TARJETAS -->
+    <section class="slider-section reveal">
+        <h2>Galería</h2>
+
+        <div class="slider-container" id="slider">
+            <div class="slide"><img src="Imagenes/1.png"></div>
+            <div class="slide"><img src="Imagenes/2.png"></div>
+            <div class="slide"><img src="Imagenes/3.png"></div>
+        </div>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section id="quienes" class="seccion reveal">
+        <h2>¿Quiénes Somos?</h2>
+        <div class="card">
+            <p>El Centro de Acopio El Guarco es una realidad que comenzó con una simple idea y mucha voluntad. Iniciamos sin grandes recursos, pero con la inquebrantable creencia de que cada persona en nuestra comunidad tiene un papel fundamental en la sostenibilidad.
+
+Estamos construyendo algo grande, y lo hacemos juntos. Creemos firmemente que la ambición de crecer y ser los líderes ambientales del cantón solo se logrará con tu apoyo y el compromiso diario de cada ciudadano.</p>
+            <img src="Imagenes/N3.png" class="imagen-full">
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="seccion reveal">
+        <h2>Servicios</h2>
+
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <i class="fa-solid fa-recycle"></i>
+                <h3>Clasificación</h3>
+                <p>Separamos y organizamos los materiales reciclables de forma eficiente.</p>
+            </div>
+
+            <div class="servicio-card">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Recolección</h3>
+                <p>Ofrecemos recolección de materiales en diferentes zonas del cantón.</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- MATERIALES -->
+    <section id="materiales" class="seccion reveal">
+        <h2>Materiales que Aceptamos</h2>
+
+        <div class="card">
+            <table class="tabla">
+                <tr><th>Material</th><th>Descripción</th></tr>
+                <tr><td>Plásticos</td><td>Botellas PET, envases plásticos limpios</td></tr>
+                <tr><td>Cartón</td><td>Cajas limpias y secas</td></tr>
+                <tr><td>Papel</td><td>Hojas, cuadernos y periódicos</td></tr>
+                <tr><td>Vidrio</td><td>Botellas y frascos sin residuos</td></tr>
+                <tr><td>Metales</td><td>Latas de aluminio y acero</td></tr>
+            </table>
+        </div>
+
+        <h3 class="no">❌ Materiales NO aceptados</h3>
+        <div class="card small">
+            <ul class="no-lista">
+                <li>Vidrios rotos</li>
+                <li>Espejos</li>
+                <li>Cerámica</li>
+                <li>Plásticos con aceite o químicos</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section id="ubicacion" class="seccion reveal">
+        <h2>Ubicación</h2>
+
+        <p class="direccion">
+            📍 <strong>El Tejar, Cartago, Costa Rica</strong><br>
+            200m Sur y 150m Oeste del Restaurante El Quijongo.
+        </p>
+
+        <div class="card mapa-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1965.5700604005654!2d-83.95278509706594!3d9.838596836034084!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scr!4v1763759862777!5m2!1ses!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+	<!-- HORARIOS -->
+<section class="seccion reveal">
+    <h2>Horarios</h2>
+    <div class="card">
+        <p><strong>Lunes a Viernes:</strong> 7:00 am – 5:00 pm</p>
+        <p><strong>Sábados:</strong> 7:00 am – 12:00 md</p>
+    </div>
+</section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion reveal">
+        <h2>Contacto</h2>
+
+        <div class="card contacto-card">
+            <p><i class="fa-solid fa-phone"></i> Teléfono: <strong>+506 8888-8888</strong></p>
+            <p><i class="fa-solid fa-envelope"></i> Correo: <strong>info@acopioelguarco.com</strong></p>
+            <p><i class="fa-solid fa-location-dot"></i> Dirección: <strong>El Guarco, Cartago, Costa Rica</strong></p>
+
+            <div class="redes">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+<img src="Imagenes/N2.png" class="imagen-full">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Centro de Acopio El Guarco. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
