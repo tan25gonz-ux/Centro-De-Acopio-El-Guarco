@@ -347,3 +347,56 @@ body.dark .dark-toggle i {
         padding: 40px 20px;
     }
 }
+
+@media (max-width: 768px) {
+    /* Corregir el encabezado para que no se amontone */
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    .navbar .logo span {
+        font-size: 14px; /* Texto más pequeño para que quepa todo */
+    }
+
+    /* Hacer que los pasos de preparación se vean mejor */
+    .pasos-grid {
+        gap: 15px; /* Menos espacio entre tarjetas */
+        padding: 0 10px;
+    }
+
+    .paso-card {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .paso-card i {
+        font-size: 45px !important; /* Iconos más grandes y visibles */
+        margin-bottom: 10px;
+    }
+
+    .paso-card h3 {
+        font-size: 1.2rem;
+        margin: 5px 0;
+    }
+
+    .paso-card p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    /* Ajustar el título de la sección para que no se corte */
+    .seccion h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    /* Reducir el espacio en blanco excesivo entre secciones */
+    .seccion {
+        margin: 30px auto;
+        padding: 20px 5%;
+    }
+}
